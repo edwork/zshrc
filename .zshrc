@@ -1,10 +1,6 @@
 # Edwork ZSHRC Config :: 2016-2016
 # standard .zshrc with a collection of useful additions
 
-# Set up the prompt
-
-source /etc/bash_completion.d/g4d
-
 autoload -Uz promptinit
 promptinit
 prompt adam1
