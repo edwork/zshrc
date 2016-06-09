@@ -77,3 +77,5 @@ alias wget='wget -c'
 # ZSHRC Shortcuts
 alias zshrc='vim ~/.zshrc'
 alias home='cd ~/'
+# File Manipulation Shortcuts (from current folder)
+alias delempty='find . -empty -type d -delete'
