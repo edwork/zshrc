@@ -1,16 +1,23 @@
 #!/bin/zsh
 
-# Pull the latest changes from the source
-git reset --hard HEAD
-git pull
+# Set $EDZSHDIR equal to where you ran the update script
+EDZSHDIR="$(dirname "$0")"
+cd $EDZSHDIR
 
-# Remove the previous config
+# Pull the latest changes from the source
+git pull
+chmod +x $EDZSHDIR/updaterc.sh
+
+# Remove the original config
 rm ~/.zshrc
 
 # Copy the new config to your home
-cp ./.zshrc ~/.zshrc
+cp $EDZSHDIR/.zshrc ~/.zshrc
+
+# Add users' custom private configs if they exist
+if [ -f $EDZSHDIR/local_config ]; then cat $EDZSHDIR/local_config >> ~/.zshrc; fi
 
 echo Your .zshrc file has been updated!
 
 # Re-launch zsh to refresh the config
-/bin/zsh
+/usr/bin/zsh
