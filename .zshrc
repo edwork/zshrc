@@ -7,6 +7,8 @@ prompt adam1
 
 setopt histignorealldups sharehistory
 
+if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
+
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
 
