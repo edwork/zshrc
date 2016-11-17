@@ -81,3 +81,5 @@ alias zshrc='vim ~/.zshrc'
 alias home='cd ~/'
 # File Manipulation Shortcuts (from current folder)
 alias delempty='find . -empty -type d -delete'
+# Program Shortcuts
+alias sf='screenfetch'
