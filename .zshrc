@@ -84,4 +84,3 @@ alias delempty='find . -empty -type d -delete'
 # Program Shortcuts
 alias sf='screenfetch'
 
-#Additional local configs below:
