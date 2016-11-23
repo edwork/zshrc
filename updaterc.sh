@@ -8,7 +8,7 @@ SCRIPTDIR=`dirname $SCRIPT`
 if [ ! -f /usr/bin/zsh ] && [ -f /usr/bin/apt ]; then sudo apt update && sudo apt install zsh -y; fi
 
 # Make sure zsh is the shell
-if [ -z $BASH ]; then echo Login to set your shell to ZSH: && chsh -s /bin/zsh; fi
+if [ ! -n $BASH ]; then echo Login to set your shell to ZSH: && chsh -s /bin/zsh; fi
 
 # Pull the latest changes from the source
 git pull
