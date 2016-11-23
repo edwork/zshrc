@@ -1,4 +1,4 @@
-# zshrc
+#zshrc
 .zshrc configurations for power users!
 
 #Features:
@@ -13,9 +13,13 @@
 ## Navigation Aliases
 ### LS Mods
 alias ls='ls -1Fh --color=auto'
+
 alias ll='ls -l -1Fh --color=auto'
+
 alias la='ls -a --color=auto'
+
 alias lt='ls -ltFh'
+
 alias lal='ls -al --color=auto'
 ### CLEAR Mods
 alias c='clear'
