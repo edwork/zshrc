@@ -20,7 +20,7 @@ if [ -f ~/.zshrc ]; then rm ~/.zshrc; fi
 cp $SCRIPTDIR/.zshrc ~/.zshrc
 
 # Add users' custom private configs if they exist, add file if not yet created
-if [ -f ~/.zshrc-local ]; then cat ~/.zsh-localg >> ~/.zshrc; fi
+if [ -f ~/.zsh-local ]; then cat ~/.zsh-local >> ~/.zshrc; fi
 if [ ! -f ~/.zsh-local ]; then echo "# ZSH Configs local to this machine only" > ~/.zsh-local; fi
 
 # Add updater script location to .zshrc

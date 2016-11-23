@@ -83,4 +83,4 @@ alias home='cd ~/'
 alias delempty='find . -empty -type d -delete'
 # Program Shortcuts
 alias sf='screenfetch'
-
+# Path to the updater script
