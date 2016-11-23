@@ -30,5 +30,5 @@ echo Your .zshrc file has been updated!
 # Clean that screen!
 clear
 
-# Use the built in ZSH command to set the new config active
-source ~/.zshrc && clear && if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
+# Reload ZSH
+/usr/bin/zsh
