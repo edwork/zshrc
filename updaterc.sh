@@ -32,4 +32,5 @@ echo Your .zshrc file has been updated!
 clear
 
 # Reload ZSH
-/usr/bin/zsh
+ZSHLocation=$(which zsh)
+$ZSHLocation
