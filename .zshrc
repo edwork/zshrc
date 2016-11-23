@@ -78,7 +78,6 @@ alias upgrade='sudo apt-get update && sudo apt-get upgrade -y'
 alias wget='wget -c'
 # ZSHRC Shortcuts
 alias zshrc='vim ~/.zshrc'
-alias updaterc='$EDZSHDIR/updaterc.sh'
 alias home='cd ~/'
 # File Manipulation Shortcuts (from current folder)
 alias delempty='find . -empty -type d -delete'

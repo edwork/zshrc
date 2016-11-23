@@ -7,6 +7,9 @@ SCRIPTDIR=`dirname $SCRIPT`
 # Verify the installation of ZSH, if not there install it (only on systems with apt currently
 if [ ! -f /usr/bin/zsh ] && [ -f /usr/bin/apt ]; then sudo apt update && sudo apt install zsh -y; fi
 
+# Make sure zsh is the shell
+if [ $SHELL != /bin/zsh ]; then echo Login to set your shell to ZSH: && CHSH -s /bin/zsh; fi
+
 # Pull the latest changes from the source
 git pull
 
@@ -27,5 +30,5 @@ echo Your .zshrc file has been updated!
 # Clean that screen!
 clear
 
-# Re-launch zsh to refresh the config
-/usr/bin/zsh
+# Use the built in ZSH command to set the new config active
+source ~/.zshrc && clear && if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
