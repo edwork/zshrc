@@ -7,7 +7,9 @@ prompt adam1
 
 setopt histignorealldups sharehistory
 
+# Run the nice Screenfetch or Archey command when loaded
 if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
+if [ -f /usr/bin/archey ] && [ ! -f /usr/bin/screenfetch ]; then archey; fi
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
