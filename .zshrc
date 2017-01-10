@@ -1,4 +1,4 @@
-# Edwork ZSHRC Config :: 2016-2016
+# Edwork ZSHRC Config :: 2016-2017
 # standard .zshrc with a collection of useful additions
 
 autoload -Uz promptinit
