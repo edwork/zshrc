@@ -78,6 +78,9 @@ alias update='sudo apt-get update'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade -y'
 # WGET Mods
 alias wget='wget -c'
+# Shutdown Mods
+alias reboot='if [ "$(id -u)" != "0" ]; then sudo shutdown -r now; else shutdown -r now;'
+alias poweroff='if [ "$(id -u)" != "0" ]; then sudo shutdown -r now; else shutdown -h now;'
 # ZSHRC Shortcuts
 alias zshrc='vim ~/.zshrc'
 alias customrc='vim ~/.zsh-local'
