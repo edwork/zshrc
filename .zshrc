@@ -89,4 +89,5 @@ alias home='cd ~/'
 alias delempty='find . -empty -type d -delete'
 # Program Shortcuts
 alias sf='screenfetch'
+alias ta='tmux attach'
 # Path to the updater script
