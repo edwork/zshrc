@@ -1,16 +1,17 @@
-#zshrc
+# [moved project to git.edwork.org - this version is depricated]
+# zshrc
 .zshrc configurations for power users!
 
-#Features:
+## Features:
 -Runs Screenfetch (if installed) when ZSH is loaded
 -Lots of aliases (listed below)
 -Safeguards by aliasing common commands (rm -rf / protection)
 
-#Update with a single command!
+## Update with a single command!
 -Pull changes from github with the 'updaterc' alias!
 
-#Aliases:
-## Navigation Aliases
+## Aliases:
+
 ### LS Mods
 alias ls='ls -1Fh --color=auto'
 
