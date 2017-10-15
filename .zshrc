@@ -7,7 +7,7 @@ prompt adam1
 
 setopt histignorealldups sharehistory
 
-# Run the nice Screenfetch or Archey command when loaded
+# Runs the nice Screenfetch or Archey command when loaded
 if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
 if [ -f /usr/bin/archey ] && [ ! -f /usr/bin/screenfetch ]; then archey; fi
 
